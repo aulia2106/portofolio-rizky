@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================== */
   const copyBtn = document.getElementById('copyEmailBtn');
   const copyLabel = document.getElementById('copyEmailLabel');
-  const emailAddress = '251410102106@mail.unej.ac.id';
+  const emailAddress = '252410102106@mail.unej.ac.id';
 
   copyBtn.addEventListener('click', async () => {
     try {
@@ -178,8 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
       setError('fEmail', '');
     }
 
-    if (message.length < 10) {
-      setError('fMessage', 'Pesan minimal 10 karakter.');
+    if (message.length < 1) {
+      setError('fMessage', 'Jangan lupa isi pesannya ya.');
       valid = false;
     } else {
       setError('fMessage', '');

@@ -17,7 +17,7 @@ Website portofolio pribadi, dibangun dengan **HTML, CSS murni (tanpa Tailwind/Bo
 
 ## Tentang Proyek
 
-Website ini menampilkan profil, cerita singkat, riwayat pendidikan, serta organisasi dan minat milik Rizky Aulia Putri - mahasiswa Fakultas Ilmu Komputer (Fasilkom), Universitas Jember, semester 3. Konsep visualnya bergaya "kartu pos" (postcard) dengan palet warna pink, merepresentasikan sisi petualang dan suka eksplorasi alam.
+Website ini menampilkan profil, cerita singkat, riwayat pendidikan, serta organisasi dan minat milik Rizky Aulia Putri - mahasiswa Program Studi Teknologi Informasi, Fakultas Ilmu Komputer (Fasilkom), Universitas Jember, Semester 3. Konsep visualnya bergaya "kartu pos" (postcard) dengan palet warna pink, merepresentasikan sisi petualang dan suka eksplorasi alam.
 
 ## Fitur
 
@@ -90,5 +90,5 @@ git push -u origin main
 
 ## Kontak
 
-- Email: 251410102106@mail.unej.ac.id
+- Email: 252410102106@mail.unej.ac.id
 - Asal: Pasuruan, Jawa Timur
