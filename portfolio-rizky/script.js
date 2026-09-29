@@ -1,15 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ==========================================================
-     1. TAHUN FOOTER
-     ========================================================== */
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  /* ==========================================================
-     2. UMUR OTOMATIS (dari tanggal lahir)
-     ========================================================== */
   (function hitungUmur(){
-    const lahir = new Date(2006, 11, 19); // 19 Desember 2006 (bulan index 0)
+    const lahir = new Date(2006, 11, 19); 
     const now = new Date();
     let umur = now.getFullYear() - lahir.getFullYear();
     const belumUlangTahun =
@@ -19,9 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('ageValue').textContent = umur + ' th';
   })();
 
-  /* ==========================================================
-     3. DARK / LIGHT MODE (localStorage)
-     ========================================================== */
   const themeToggle = document.getElementById('themeToggle');
   const root = document.documentElement;
   const savedTheme = localStorage.getItem('portfolio-theme');
@@ -39,9 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('portfolio-theme', next);
   });
 
-  /* ==========================================================
-     4. MOBILE NAV TOGGLE
-     ========================================================== */
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
 
@@ -59,9 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ==========================================================
-     5. SCROLL PROGRESS BAR
-     ========================================================== */
   const progressBar = document.getElementById('progressBar');
   function updateProgress(){
     const scrollTop = window.scrollY;
@@ -72,9 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateProgress, { passive: true });
   updateProgress();
 
-  /* ==========================================================
-     6. ACTIVE NAV LINK ON SCROLL (Intersection Observer)
-     ========================================================== */
   const sections = ['tentang', 'pendidikan', 'organisasi', 'kontak']
     .map(id => document.getElementById(id))
     .filter(Boolean);
@@ -93,9 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(sec => navObserver.observe(sec));
 
-  /* ==========================================================
-     7. TABS - ORGANISASI / HOBI
-     ========================================================== */
   const tabButtons = document.querySelectorAll('.tab-btn');
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -114,9 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ==========================================================
-     8. SALIN EMAIL
-     ========================================================== */
   const copyBtn = document.getElementById('copyEmailBtn');
   const copyLabel = document.getElementById('copyEmailLabel');
   const emailAddress = '252410102106@mail.unej.ac.id';
@@ -140,9 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
   });
 
-  /* ==========================================================
-     9. VALIDASI FORM KONTAK (tanpa reload)
-     ========================================================== */
   const form = document.getElementById('contactForm');
   const formSuccess = document.getElementById('formSuccess');
 
@@ -191,9 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* ==========================================================
-     10. BACK TO TOP
-     ========================================================== */
   const backToTop = document.getElementById('backToTop');
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

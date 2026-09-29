@@ -1,6 +1,4 @@
-/* ==========================================================
-   TOKENS
-   ========================================================== */
+
 :root{
   --ink: #3B1E2B;
   --ink-soft: #8A5F72;
@@ -68,9 +66,6 @@ img{ max-width: 100%; display: block; }
   *{ animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
 
-/* ==========================================================
-   LAYOUT HELPERS
-   ========================================================== */
 .section-inner{ max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 .section-inner--narrow{ max-width: 640px; }
 
@@ -80,17 +75,11 @@ img{ max-width: 100%; display: block; }
 .section-title{ font-size: clamp(1.7rem, 3vw, 2.2rem); font-style: italic; }
 .section-sub{ color: var(--ink-soft); margin-top: 10px; max-width: 56ch; font-size: 1.02rem; }
 
-/* ==========================================================
-   PROGRESS BAR
-   ========================================================== */
 .progress-bar{
   position: fixed; top: 0; left: 0; height: 3px; width: 0%;
   background: var(--pink); z-index: 1000; transition: width .1s linear;
 }
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
 .site-header{
   position: sticky; top: 0; z-index: 100;
   background: color-mix(in srgb, var(--paper) 88%, transparent);
@@ -139,9 +128,6 @@ img{ max-width: 100%; display: block; }
 .nav-toggle.is-open span:nth-child(2){ opacity: 0; }
 .nav-toggle.is-open span:nth-child(3){ transform: translateY(-6px) rotate(-45deg); }
 
-/* ==========================================================
-   HERO
-   ========================================================== */
 .hero{
   max-width: var(--maxw); margin: 0 auto; padding: 72px 24px 48px;
   display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: start;
@@ -164,7 +150,6 @@ img{ max-width: 100%; display: block; }
 .btn-ghost{ background: transparent; border-color: var(--line); color: var(--ink); }
 .btn-ghost:hover{ border-color: var(--pink); }
 
-/* POSTCARD */
 .postcard{
   background: var(--card);
   border: 1px dashed var(--blush);
@@ -208,9 +193,6 @@ img{ max-width: 100%; display: block; }
 .btn-copy:hover{ border-color: var(--pink); color: var(--pink-deep); }
 .btn-copy.is-copied{ background: color-mix(in srgb, var(--pink) 16%, transparent); border-color: var(--pink); color: var(--pink-deep); }
 
-/* ==========================================================
-   STRIP
-   ========================================================== */
 .strip{ border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper-alt); }
 .strip-inner{
   max-width: var(--maxw); margin: 0 auto; padding: 28px 24px;
@@ -220,9 +202,6 @@ img{ max-width: 100%; display: block; }
 .strip-value{ font-family: var(--font-display); font-size: 1.8rem; color: var(--pink-deep); }
 .strip-label{ font-size: .82rem; color: var(--ink-soft); }
 
-/* ==========================================================
-   STORY CARD
-   ========================================================== */
 .story-card{
   margin: 32px 0 0;
   background: var(--card);
@@ -237,9 +216,6 @@ img{ max-width: 100%; display: block; }
   color: var(--ink);
 }
 
-/* ==========================================================
-   TIMELINE
-   ========================================================== */
 .timeline{ list-style: none; margin: 32px 0 0; padding: 0; position: relative; }
 .timeline::before{
   content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 2px; background: var(--line);
@@ -259,9 +235,6 @@ img{ max-width: 100%; display: block; }
   padding: 3px 10px; border-radius: 999px;
 }
 
-/* ==========================================================
-   TABS (Organisasi / Hobi)
-   ========================================================== */
 .tabs{ display: flex; gap: 8px; margin-top: 32px; border-bottom: 1px solid var(--line); }
 .tab-btn{
   background: transparent; border: none; border-bottom: 2px solid transparent;
@@ -290,9 +263,6 @@ img{ max-width: 100%; display: block; }
 .chip-card h3{ font-size: 1.02rem; }
 .chip-card p{ color: var(--ink-soft); font-size: .88rem; margin-top: 6px; }
 
-/* ==========================================================
-   CONTACT
-   ========================================================== */
 .contact-form{ margin-top: 32px; display: flex; flex-direction: column; gap: 18px; }
 .form-row{ display: flex; flex-direction: column; gap: 6px; }
 .form-row label{ font-size: .85rem; font-weight: 600; color: var(--ink-soft); }
@@ -311,9 +281,6 @@ img{ max-width: 100%; display: block; }
   font-size: .88rem; color: var(--ink-soft);
 }
 
-/* ==========================================================
-   FOOTER
-   ========================================================== */
 .site-footer{
   border-top: 1px solid var(--line); padding: 24px; display: flex; align-items: center;
   justify-content: space-between; max-width: var(--maxw); margin: 0 auto; color: var(--ink-soft); font-size: .85rem;
@@ -323,9 +290,6 @@ img{ max-width: 100%; display: block; }
   background: var(--card); color: var(--ink); cursor: pointer;
 }
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
 @media (max-width: 900px){
   .hero{ grid-template-columns: 1fr; }
   .postcard{ max-width: 460px; }
