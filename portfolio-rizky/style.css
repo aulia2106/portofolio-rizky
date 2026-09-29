@@ -174,14 +174,12 @@ img{ max-width: 100%; display: block; }
   position: relative;
 }
 .postcard-stamp{
-  position: absolute;
-  top: 18px; right: 18px;
-  width: 64px; height: 64px;
-  border: 2px dashed var(--blush);
-  border-radius: 8px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
   object-fit: cover;
-  padding: 4px;
-  transform: rotate(6deg);
+  border-radius: var(--radius-sm);
+  margin-bottom: 18px;
 }
 .postcard-mark{
   display: inline-block;
@@ -196,7 +194,6 @@ img{ max-width: 100%; display: block; }
 .postcard-title{
   font-size: 1.7rem;
   margin-bottom: 20px;
-  padding-right: 60px;
 }
 .postcard-list{ margin: 0; display: flex; flex-direction: column; gap: 12px; }
 .postcard-row{ display: flex; flex-direction: column; gap: 2px; border-top: 1px dashed var(--line); padding-top: 10px; }
@@ -353,5 +350,4 @@ img{ max-width: 100%; display: block; }
   .hero{ padding-top: 48px; }
   .hero-cta{ flex-direction: column; align-items: stretch; }
   .btn{ justify-content: center; }
-  .postcard-stamp{ width: 52px; height: 52px; }
 }
