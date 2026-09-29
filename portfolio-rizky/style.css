@@ -306,11 +306,10 @@ img{ max-width: 100%; display: block; }
 .form-success{ font-size: .9rem; color: var(--pink-deep); margin-top: -4px; }
 .form-success.is-hidden{ display: none; }
 
-.contact-direct{
+.contact-address{
   margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line);
-  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  font-size: .88rem; color: var(--ink-soft);
 }
-.contact-address{ font-size: .88rem; color: var(--ink-soft); }
 
 /* ==========================================================
    FOOTER
@@ -342,7 +341,6 @@ img{ max-width: 100%; display: block; }
   .main-nav.is-open{ opacity: 1; transform: translateY(0); pointer-events: auto; }
   .nav-toggle{ display: flex; }
   .strip-inner{ grid-template-columns: repeat(2, 1fr); }
-  .contact-direct{ flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 480px){
