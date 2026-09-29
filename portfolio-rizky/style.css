@@ -101,8 +101,13 @@ img{ max-width: 100%; display: block; }
   max-width: var(--maxw); margin: 0 auto; padding: 16px 24px;
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
-.brand{ font-family: var(--font-display); font-size: 1.35rem; }
-.brand span{ color: var(--pink); }
+.brand{ display: block; }
+.brand-photo{
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--pink);
+}
 
 .main-nav{ display: flex; gap: 28px; }
 .nav-link{ font-size: .95rem; color: var(--ink-soft); position: relative; padding: 4px 0; }
@@ -172,15 +177,10 @@ img{ max-width: 100%; display: block; }
   position: absolute;
   top: 18px; right: 18px;
   width: 64px; height: 64px;
-  border: 2px solid var(--blush);
+  border: 2px dashed var(--blush);
   border-radius: 8px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  font-size: .62rem;
-  font-weight: 700;
-  color: var(--pink-deep);
-  line-height: 1.2;
+  object-fit: cover;
+  padding: 4px;
   transform: rotate(6deg);
 }
 .postcard-mark{
@@ -353,5 +353,5 @@ img{ max-width: 100%; display: block; }
   .hero{ padding-top: 48px; }
   .hero-cta{ flex-direction: column; align-items: stretch; }
   .btn{ justify-content: center; }
-  .postcard-stamp{ width: 52px; height: 52px; font-size: .56rem; }
+  .postcard-stamp{ width: 52px; height: 52px; }
 }
